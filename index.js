@@ -1,6 +1,10 @@
 let x;
+
 document.getElementById("generate").onclick =  function(){
     x = ((Math.random() * 100) + 1);
-    x = Math.round(x);
-    document.getElementById("xlabel").innerHTML = x;
+    fetch("index.txt")
+.then(response => response.text());
+const lines = data.split("/n");
+const lineNumber = x;
+document.getElementById("xlabel").innerHTML = lineNumber;
 }
