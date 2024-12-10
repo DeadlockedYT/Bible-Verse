@@ -1,2 +1,5 @@
-let x = (Math.random() * 100) + 1;
-console.log(x);
+let x;
+document.getElementById("generate").onclick =  function(){
+    x = (Math.random() * 100) + 1;
+    document.getElementById("xlabel").innerHTML = x;
+}
