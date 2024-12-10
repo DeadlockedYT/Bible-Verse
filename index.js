@@ -5,6 +5,6 @@ document.getElementById("generate").onclick =  function(){
     fetch("index.txt")
 .then(response => response.text());
 const lines = data.split("/n");
-const lineNumber = x;
+const lineNumber = lines[x];
 document.getElementById("xlabel").innerHTML = lineNumber;
 }
