@@ -14,6 +14,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            text-align: center;
         }
 
         h1 {
@@ -25,6 +26,16 @@
 
         .box {
             text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .verse {
+            width: 100%;
+            word-wrap: break-word;
+            max-height: 200px; /* Limits the height of the verse */
+            overflow-y: auto; /* Scrolls if the verse exceeds the max height */
+            margin: 10px 0;
         }
 
         p {
@@ -50,10 +61,16 @@
 <body>
     <div class="box">
         <h1>Your Bible Verse</h1>
-        <span id="xlabel"></span><br>
+        <!-- Verse display container with fixed height -->
+        <div class="verse">
+            <span id="xlabel">Here will be your verse.</span>
+        </div>
+
         <button type="button" id="generate">Generate New Verse</button>
+        
         <h2>Salvation</h2>
         <h3>If you accept Jesus as your Lord and Savior, read this prayer:</h3>
+        
         <p>
             "Dear God, I admit that I am a sinner, and I need your forgiveness. 
             I believe that Jesus Christ is Your Son and that He died for my sins 
