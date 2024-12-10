@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Bible Verse</title>
     <meta charset="UTF-8">
@@ -16,14 +15,12 @@
             margin: 0;
             text-align: center;
         }
-
         h1 {
             font: small-caps;
             background-color: lightblue;
             text-align: center;
             margin: 10px;
         }
-
         .box {
             text-align: center;
             max-width: 600px;
@@ -31,24 +28,21 @@
             padding: 20px;
             box-sizing: border-box;
         }
-
         .verse {
             width: 100%;
             word-wrap: break-word;
-            max-height: 200px; /* Limits the height of the verse */
-            overflow-y: auto; /* Scrolls if the verse exceeds the max height */
+            max-height: 200px;
+            overflow-y: auto; 
             margin: 10px 0;
-            text-align: center; /* Ensures the verse text is centered */
+            text-align: center; 
         }
-
         p {
             width: 500px;
             word-wrap: break-word;
-            text-align: left; /* Aligns text to the left */
+            text-align: left;
             margin-top: 20px;
-            margin-left: 0%; /* Moves the prayer text slightly to the right */
+            margin-left: 6%; 
         }
-
         button {
             margin-top: 20px;
             padding: 10px;
@@ -56,27 +50,20 @@
             border: none;
             cursor: pointer;
         }
-
         h2, h3 {
             text-align: center;
         }
     </style>
 </head>
-
 <body>
     <div class="box">
         <h1>Your Bible Verse</h1>
-        <!-- Verse display container with fixed height and centered text -->
         <div class="verse">
             <span id="xlabel">Here will be your verse.</span>
         </div>
-
         <button type="button" id="generate">Generate New Verse</button>
-        
         <h2>A prayer of hope</h2>
         <h3>If you wish accept Jesus as your Lord and Savior, read this prayer:</h3>
-        
-        <!-- Prayer with slight adjustment to the right -->
         <p>
             "Dear God, I admit that I am a sinner, and I need your forgiveness. 
             I believe that Jesus Christ is Your Son and that He died for my sins 
@@ -84,8 +71,6 @@
             Help me to follow You and live a life that honors You. In Jesus' name, Amen."
         </p>
     </div>
-
     <script src="index.js"></script>
 </body>
-
 </html>
