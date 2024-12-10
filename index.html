@@ -6,32 +6,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
         h1 {
             font: small-caps;
             background-color: lightblue;
             text-align: center;
+            margin: 10px;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        p {
+            width: 500px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightgreen;
+            border: none;
+            cursor: pointer;
+        }
+
+        h2, h3 {
+            text-align: center;
         }
     </style>
-   
 </head>
-<body style="background-color: lightblue; justify-content: center;">
+
+<body>
     <div class="box">
         <h1>Your Bible Verse</h1>
-        <div style="width: 500px; word-wrap: break-word;"></divstyle>
         <span id="xlabel"></span><br>
-        </div>
         <button type="button" id="generate">Generate New Verse</button>
         <h2>Salvation</h2>
-        <h3> If you accept Jesus as your lord and savior, read this prayer:</h3>
-        <div style="width: 500px; word-wrap: break-word;"></divstyle>
-            <p>
-                "Dear God, I admit that I am a sinner, and I need your forgiveness. 
-                I believe that Jesus Christ is Your Son and that He died for my sins 
-                and rose again. I ask You to forgive me and come into my life as my Lord and Savior. 
-                Help me to follow You and live a life that honors You. In Jesus' name, Amen."
-            </p>
-        </div>
-       
+        <h3>If you accept Jesus as your Lord and Savior, read this prayer:</h3>
+        <p>
+            "Dear God, I admit that I am a sinner, and I need your forgiveness. 
+            I believe that Jesus Christ is Your Son and that He died for my sins 
+            and rose again. I ask You to forgive me and come into my life as my Lord and Savior. 
+            Help me to follow You and live a life that honors You. In Jesus' name, Amen."
+        </p>
     </div>
 
     <script src="index.js"></script>
